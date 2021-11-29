@@ -93,13 +93,57 @@ Can we predict churn?
 
 
 
-## Data Dictionary 
+## Hypotheses 
 
 
+- H0:  customer churn is independent of which payment type they use
+
+- Ha:  customer churn has a dependent of which payment type they use 
 
 
+- H0:  customer churn is independent of which contract type they have
+- Ha:  customer churn has a dependent of which contract type they have
 
 
+## Key Findings
+
+Continuing to dig deeper into the initial findings from the previous Telco churn project, we can now state that the payment method that a customer uses is not independent of churn
+
+A customer's contract type and specific payment method are good indicators of churn.
+
+Customers who were on month-to-month contracts were more likely to churn
+
+Customers who use electronic checks as their payment method were more likely to churn.
+
+Customers who use automatic payment methods are less likely to churn than those not on automatic payments
+
+The Random Forest model was successful in predicting churn accuracy on TEST data with an accuracy of 0.80!
+
+That is a higher than the baseline which was 0.73.
+
+
+## Recommendations & Takeaways
+
+Offer incentives to convert to automatic payment plans Offer incentives to convert month-to-month customers to longer term customers Find out more about electronic check customers to determine if there are issues causing their churn Next Steps Continue running more models changing the hyperparameters to get a better model of churn Group features together, such as month-to-month e-check customers who do not have partners or service types to run models on Send a survery to customers who churn to further understand their actual reason for leaving Fine tune the model by optimizing for precision or recall
+
+
+## How to Recreate This Project
+To recreate this project you will need the following files from this repository:
+
+-  README.md
+-  env file for you data base credentials to connect to the SQL database containing -  -  Telco data
+-  acquire.py
+-  prepare.py
+-  explore.py
+-  model.py
+-  Final Telco Churn Project Notebook.ipynb
+
+### Instructions:
+
+Read the README.md
+Download the aquire.py, prepare.py, explore.py and final_report.ipynb files into your working directory, or clone this repository
+Add your own env file to your directory (user, password, host)
+Run the Final Telco Churn Project Notebook.ipynb notebook
 
 
 
